@@ -7,7 +7,7 @@
 
 ## Using PNPOnline for delegated access. Install PNPOnline first. 
 ## This one gives a lots of permissions - not all are needed in this OneNote demo. Adjust as needed.
-Connect-PnPOnline -Url https://nopanen.sharepoint.com -Scopes "User.Read","User.ReadBasic.All", "Group.Read.All", "Group.ReadWrite.All", "Files.Read.All", "Files.ReadWrite.All", "Sites.Read.All", "Sites.ReadWrite.All", "Notes.Read.All", "Notes.Create",  "Notes.ReadWrite.All", "Calendars.ReadWrite", "Chat.Read", "Chat.ReadWrite",  "Directory.Read.All", "Directory.ReadWrite.All", "Directory.AccessAsUser.All"
+Connect-PnPOnline -Url https://{yourtenantnamehere}.sharepoint.com -Scopes "User.Read","User.ReadBasic.All", "Group.Read.All", "Group.ReadWrite.All", "Files.Read.All", "Files.ReadWrite.All", "Sites.Read.All", "Sites.ReadWrite.All", "Notes.Read.All", "Notes.Create",  "Notes.ReadWrite.All", "Calendars.ReadWrite", "Chat.Read", "Chat.ReadWrite",  "Directory.Read.All", "Directory.ReadWrite.All", "Directory.AccessAsUser.All"
 $delegatedaccessToken =Get-PnPAccessToken
 
 ## to make things easier, we can lookup team and channel by names.
